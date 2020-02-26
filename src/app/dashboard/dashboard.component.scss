@@ -1,0 +1,67 @@
+.base-dash {
+    height: 100%;
+    background-color: rgb(231, 240, 255);
+    .header-dash {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        margin: 16px 16px;
+        @media only screen and (max-width: 960px) {
+            padding-left: 32px;
+        }
+        .login-user {
+            display: flex;
+            align-items: center;
+            .name {
+                font-size: 18px;
+                margin-right: 16px;
+                @media only screen and (max-width: 960px) {
+                    display: none;
+                }
+            }
+            .photo {
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.card {
+    text-align: center;
+    padding: 32px 0;
+    transition: 0.5s;
+    margin-bottom: 16px;
+    @media only screen and (max-width: 960px) {
+        padding: 8px 0;
+    }
+    &:hover {
+        transition: 0.5s;
+        border: 2px solid rgb(62, 184, 255);
+        color: rgb(0, 139, 219);
+    }
+    span {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    &.grafic {
+        padding: 0;
+        height: 18%;
+        display: flex;
+        justify-content: center;
+        @media only screen and (max-width: 960px) {
+            padding: 8px 0;
+        }
+        span {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}

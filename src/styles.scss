@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+body, html {
+    height: 100%;
+    background-image: url(https://nuwallpaperhd.info/wp-content/uploads/2018/01/Cool-Orange-Background-Wallpapers.jpg);
+    background-color: #e7f0ff;
+}
+
+h1 {font-size: 32px;}
+h2 {font-size: 24px;}
+
+.form-group {
+    margin: 10px 0;
+    label {
+        background: #FFF;
+        font-size: 12px;
+        position: absolute;
+        margin: -10px 0 0 12px;
+        padding: 0 5px;
+    }
+    input {
+        padding: 24px 16px;
+    }
+}
+
+.btn-first {
+    color: #FFF;
+    background-color: #d45500;
+    border-color: #d45500;
+    &:hover {
+        color: #FFF;
+        background-color: #ac4500;
+        border-color: #ac4500; 
+    }
+}

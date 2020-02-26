@@ -1,0 +1,47 @@
+<div class="d-flex base-dash">
+
+    <app-menu></app-menu>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-dash">
+                    <h1>OverView</h1>
+                    <div class="login-user">
+                        <span class="name">Esther Miriam </span>
+                        <div class="photo">
+                            <img src="../assets/images/perfil.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3" *ngFor="let data of listData; let index = index">
+                <div class="card">
+                    {{data.name}}
+                    <span>{{ data.number }}</span>
+                </div>     
+            </div>
+        </div>
+        <div class="row mt-4">            
+            <div class="col-12 col-md-9">
+                <div class="description">
+                    <p><strong>Today's trends</strong><br/>
+                    <span>as of 25 May 2019. 09:14 PM</span></p>   
+                </div>
+                <canvas baseChart 
+                [datasets]="lineChartData" 
+                [labels]="lineChartLabels" 
+                [options]="lineChartOptions"
+                [legend]="lineChartLegend" 
+                [chartType]="lineChartType" 
+                [plugins]="lineChartPlugins">
+                </canvas>         
+            </div>  
+            <div class="col-12 col-md-3 d-flex flex-column justify-content-between">
+                <div class="card grafic" *ngFor="let dataExtra of listDataExtra; let index = index">
+                    {{dataExtra.name}}
+                    <span>{{dataExtra.result}}</span>
+                </div>          
+            </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+<div class="menu-mobile" (click)="openMenu()">
+    <i class="material-icons">
+        menu
+    </i>
+</div>
+
+<div class="menu-base" [ngClass]="{'show': toogleMenu}">
+    <div class="d-flex justify-content-between align-items-center">
+    <h2 class="menu-title">DashBoard kit</h2>
+    <i class="material-icons" (click)="openMenu()">
+        close
+        </i>
+    </div>
+    <ul class="item-menu">
+        <li>
+            <i class="material-icons">
+                view_module
+            </i>
+            Overview
+        </li>
+        <li>
+            <i class="material-icons">
+                swap_vertical_circle
+            </i>
+            Tickets
+        </li>
+        <li>
+            <i class="material-icons">
+                wb_iridescent
+            </i>
+            Ideias
+        </li>
+        <li>
+            <i class="material-icons">
+                contacts
+            </i>            
+            Contacts
+        </li>
+        <li>
+            <i class="material-icons">
+                perm_identity
+            </i>            
+            Agents
+        </li>
+        <li>
+            <i class="material-icons">
+                assessment
+            </i>            
+            Articles
+        </li>
+        <li class="division"></li>
+        <li>
+            <i class="material-icons">
+                settings
+            </i>          
+            Settings
+        </li>
+        <li routerLink="/">
+            <i class="material-icons">
+                accessible
+            </i>            
+            Logout
+        </li>
+    </ul>
+</div>
